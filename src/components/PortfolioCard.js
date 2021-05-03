@@ -16,7 +16,9 @@ export default function PortfolioCard(props) {
   }
 
   useEffect(() => {
-    
+    setProjectClassHieght(projEl.current.clientWidth)
+    setHeaderHieght(h3El.current.clientHeight)
+    setRowHieght(row.current.clientHeight)
 		window.addEventListener('resize',() => setTimeout(resize,500))
 		return () => {
 			window.removeEventListener('resize',resize)

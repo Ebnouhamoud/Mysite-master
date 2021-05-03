@@ -12,6 +12,8 @@ export default function Nav() {
 		setMarginTop(`${(logoEl.current.clientHeight - liEl.current.clientHeight)/2}px`)
 	}
 	useEffect(() => {
+		setHeight(logoEl.current.clientHeight)
+		setMarginTop(`${(logoEl.current.clientHeight - liEl.current.clientHeight)/2}px`)
 		window.addEventListener('resize',resize)
 		return () => {
 			window.removeEventListener('resize',resize)
