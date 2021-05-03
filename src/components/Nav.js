@@ -2,24 +2,33 @@ import React, { useEffect, useRef, useState } from 'react'
 import {Link} from 'react-router-dom'
 import logo from "../images/logo.svg"
 
+let calc=false
+
 export default function Nav() {
 	const [height,setHeight] = useState(0)
 	const [marginTop,setMarginTop]= useState(0)
+	
 	const logoEl = useRef(null)
 	const liEl = useRef(null)
+	
 	const resize = () => {
+		
+		console.log('hello ')
 		setHeight(logoEl.current.clientHeight)
 		setMarginTop(`${(logoEl.current.clientHeight - liEl.current.clientHeight)/2}px`)
 	}
 	useEffect(() => {
 		setHeight(logoEl.current.clientHeight)
 		setMarginTop(`${(logoEl.current.clientHeight - liEl.current.clientHeight)/2}px`)
-		window.addEventListener('resize',resize)
+		var clear
+		window.addEventListener('resize',()=> {
+			clearInterval(clear)
+			 clear  = setTimeout(resize,500)
+		})
 		return () => {
 			window.removeEventListener('resize',resize)
 		}
 	}, [])
-	console.log(marginTop)
   return (
     <div class = "navigation">
 			<div class = "container-fluid">

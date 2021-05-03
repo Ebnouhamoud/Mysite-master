@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Contact() {
+  
   return (
     <div class = "contact" id="contact">
     <div class = "container-fluid">

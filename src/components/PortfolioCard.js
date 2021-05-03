@@ -19,7 +19,11 @@ export default function PortfolioCard(props) {
     setProjectClassHieght(projEl.current.clientWidth)
     setHeaderHieght(h3El.current.clientHeight)
     setRowHieght(row.current.clientHeight)
-		window.addEventListener('resize',() => setTimeout(resize,500))
+    var clear
+		window.addEventListener('resize',()=> {
+			clearInterval(clear)
+			clear  = setTimeout(resize,500)
+		})
 		return () => {
 			window.removeEventListener('resize',resize)
 		}
@@ -28,7 +32,7 @@ export default function PortfolioCard(props) {
     <div class = "col-sm-4 col-md-4 text-center">
       <div style={{height:projectClassHieght}} ref= {projEl} class = {className}>
       <h3 
-      style={{paddingTop:(projectClassHieght-headerHieght-rowHieght)/2}} 
+      style={{paddingTop:(projectClassHieght-headerHieght-rowHieght)/2 + 'px'}} 
       ref={h3El} >{header}</h3>
         <p>{description} </p>
         <div ref={row} class = "row">

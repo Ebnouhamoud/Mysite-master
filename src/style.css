@@ -65,7 +65,7 @@ html {
 .submit-contact .btn-border,
 .projects .btn-border {
   background-color: transparent;
-  width: 100%;
+  min-width: 100%;
   margin-top: 40px;
   color: white;
   font-family: "Roboto", Helvetica, serif;
@@ -207,6 +207,8 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(./images/luvtalklogo.png);
   background-position: center center;
+  width: auto;
+  height: 100%;
 }
 
 .personal-website-project {
