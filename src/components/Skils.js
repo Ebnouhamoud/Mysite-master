@@ -18,7 +18,6 @@ export default function Skils() {
             header ='Development and Design'
             content = 'I aim to put my creativity to the test, designing and building unique, meaningful products for clients or merely for my own interests.'
             />
-
             <SkilsCard 
               name='responsive'
               imgSrc={responsiveImg}
