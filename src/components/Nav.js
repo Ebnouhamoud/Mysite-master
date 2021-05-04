@@ -30,17 +30,17 @@ export default function Nav() {
 		}
 	}, [])
   return (
-    <div class = "navigation">
-			<div class = "container-fluid">
-				<div class = "row">
-					<div class = "col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
-						<div ref= {logoEl} class = "logo">
+    <div className = "navigation">
+			<div className = "container-fluid">
+				<div className = "row">
+					<div className = "col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
+						<div ref= {logoEl} className = "logo">
 							<a href = "index.html"> <img src ={logo}/> </a>
 						</div>
 					</div>
 
-					<div class = "col-xs-11 col-sm-11 col-md-11 col-lg-11 text-right">
-						<div style={{height:`${height}`}} class = "primary-nav">
+					<div className = "col-xs-11 col-sm-11 col-md-11 col-lg-11 text-right">
+						<div style={{height:`${height}`}} className = "primary-nav">
 							<ul>
 								<li style={{marginTop}} ref={liEl}><Link to='/'>Home</Link></li>
 								<li style={{marginTop}}><Link to='portfolio'>Portfolio</Link></li>

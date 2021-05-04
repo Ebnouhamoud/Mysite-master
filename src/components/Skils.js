@@ -6,10 +6,10 @@ import ideasImg from "../images/innovativesolutions.svg"
 import passionImg from "../images/passion.svg"
 export default function Skils() {
   return (
-    <div class = "summary">
+    <div className = "summary">
       
-			<div class = "container-fluid">
-				<div class = "row">
+			<div className = "container-fluid">
+				<div className = "row">
           <SkilsCard 
             name='container'
             imgSrc={devImg}
@@ -28,7 +28,7 @@ export default function Skils() {
               />
 				</div>
 
-				<div class = "row">
+				<div className = "row">
             <SkilsCard 
               name='ideas'
               imgSrc={ideasImg}

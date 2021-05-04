@@ -3,25 +3,25 @@ import PortfolioCard from './PortfolioCard'
 
 export default function Portfolio() {
   return (
-    <div class = "projects" id="projects">
-			<div class = "container-fluid">
-				<div class = "row">
-					<div class = "col-sm-12 col-md-12 text-center">
-						<div class = "projects-header">
+    <div className = "projects" id="projects">
+			<div className = "container-fluid">
+				<div className = "row">
+					<div className = "col-sm-12 col-md-12 text-center">
+						<div className = "projects-header">
 							<h1>Projects and Portfolio</h1>
 						</div>
 					</div>
 				</div>
 
-				<div class = "row">
-					<div class = "col-sm-12 col-md-12 text-center">
-						<div class = "projects-header-quote">
+				<div className = "row">
+					<div className = "col-sm-12 col-md-12 text-center">
+						<div className = "projects-header-quote">
 							<h3>Sharing my endeavors and passions...</h3>
 						</div>
 					</div>
 				</div>
 
-				<div class = "row">
+				<div className = "row">
           <PortfolioCard
             className='luvtalk-project'
             header='LUV TALK Website'
@@ -39,10 +39,10 @@ export default function Portfolio() {
             />
 				</div>
 
-				<div class = "row">
-					<div class = "col-sm-2 col-md-2 col-sm-offset-5 col-md-offset-5">
-						<div class = "see-more-button">
-							<a class = "btn btn-default btn-border" href = "#">More Projects</a>
+				<div className = "row">
+					<div className = "col-sm-2 col-md-2 col-sm-offset-5 col-md-offset-5">
+						<div className = "see-more-button">
+							<a className = "btn btn-default btn-border" href = "#">More Projects</a>
 						</div>
 					</div>
 				</div>
