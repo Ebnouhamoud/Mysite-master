@@ -1,5 +1,5 @@
 import React from 'react'
-import SkilsCard from './SkilsCard'
+import SkilsCard from './SummaryCard'
 import devImg from '../images/developerdesign.svg'
 import responsiveImg from "../images/responsivedesign.svg"
 import ideasImg from "../images/innovativesolutions.svg"

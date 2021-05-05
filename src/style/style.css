@@ -1,0 +1,22 @@
+@import 'nav.css';
+@import 'header.css';
+@import 'aboutMe.css';
+@import 'summary.css';
+@import 'portfolio.css';
+@import 'footer.css';
+@import 'contact.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.objective h4,
+.education h4,
+.work-experience h4,
+.resume-projects h4,
+.activities h4,
+.skills h4,
+.endorsements h4 {
+  border-bottom: 1px solid black;
+}
+

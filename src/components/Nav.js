@@ -21,9 +21,9 @@ export default function Nav() {
 		setHeight(logoEl.current.clientHeight)
 		setMarginTop(`${(logoEl.current.clientHeight - liEl.current.clientHeight)/2}px`)
 		var clear
-		window.addEventListener('resize',()=> {
+		window.addEventListener('resize', ()=> {
 			clearInterval(clear)
-			 clear  = setTimeout(resize,500)
+			clear = setTimeout(resize,500)
 		})
 		return () => {
 			window.removeEventListener('resize',resize)

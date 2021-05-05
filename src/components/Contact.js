@@ -29,7 +29,7 @@ export default function Contact() {
             <p>Don't be afraid to contact me! I'm happy to answer any questions, provide more information, or just have a nice conversation! Fill out the form below to being reaching out to me. If you prefer another email client other than your default, which will appear after clicking the button and have all of the information you just entered, you can email me at XXXXX.</p>
             <br/>
             <br/>
-            <br/>
+            <br/> 
             <h2>Contact Information</h2>
             <p>XXXX</p>
             <p>XXXX</p>
@@ -48,7 +48,6 @@ export default function Contact() {
                     <input type = "text" placeholder= "First Name"/>
                   </div>
                 </div>
-
                 <div className = "col-sm-6 col-md-6">
                   <div className = "lastname">
                     <h4>Full Name *</h4>
