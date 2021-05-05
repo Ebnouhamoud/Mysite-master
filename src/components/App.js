@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route} from 'react-router-dom'
 
 import '../style/style.css'
-// import '../boostrap/css/bootstrap.min.css'
+import '../boostrap/css/bootstrap.min.css'
 
 import Footer from './Footer'
 import Nav from './Nav'
