@@ -30,12 +30,12 @@ export default function PortfolioCard(props) {
 	},[projEl])
   return (
     <div className = "col-sm-4 col-md-4 text-center">
-      <div style={{height:projectClassHieght}} ref= {projEl} class = {className}>
+      <div style={{height:projectClassHieght}} ref= {projEl} className = {className}>
       <h3 
       style={{paddingTop:(projectClassHieght-headerHieght-rowHieght)/2 + 'px'}} 
       ref={h3El} >{header}</h3>
         <p>{description} </p>
-        <div ref={row} class = "row">
+        <div ref={row} className = "row">
           <div className = "col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
             <div className = "project-more-info">
               <a className = "btn btn-default btn-border" href = "#">More</a>

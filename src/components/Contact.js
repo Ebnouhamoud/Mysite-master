@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
   
   return (
-    <div className = "contact" id="contact">
+    <div className = "contact" id="contact" data-testid="contact">
     <div className = "container-fluid">
       <div className = "row">
         <div className = "col-sm-12 col-md-12 text-center">

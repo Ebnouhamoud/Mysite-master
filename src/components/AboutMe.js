@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutMe() {
   return (
-    <div className = "about" id="about">
+    <div className = "about" id="about" data-testid="about">
 			<div className = "container-fluid">
 				<div className = "row">
 					<div className = "col-sm-12 col-md-12 text-center">

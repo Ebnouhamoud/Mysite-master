@@ -6,7 +6,7 @@ import emailIcon from "../images/email.svg"
 
 export default function Footer() {
   return (
-    <div className = "footer">
+    <div className = "footer" data-testid='footer'>
 			<div className = "container-fluid">
 				<div className = "row">
 					<div className = "media-links">

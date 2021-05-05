@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div className = "main">
+    <div className = "main" data-testid="header">
 			<div className = "container-fluid">
 				<div className = "row">
 					<div className = "entry-banner text-center">
